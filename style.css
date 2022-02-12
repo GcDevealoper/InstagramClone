@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #fafafa;
+  font-family: sans-serif;
+  color: #555;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  z-index: 100;
+}
+header img {
+  width: 103px;
+  height: 29px;
+  transform: translateX(72px) translateY(5px);
+}
+header #Search {
+  background: #efefef;
+  padding: 6px;
+  border-radius: 6px;
+  padding-left: 18px;
+  padding-right: 20px;
+  transform: translateX(45px);
+}
+header #Search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #999;
+  height: 24px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+header #Search input::placeholder {
+  font-size: 14px;
+  color: #c3b8b8;
+}
+header #Search i {
+  background: transparent;
+  color: #c3b8b8;
+}
+header nav {
+  transform: translateX(-52px);
+}
+header nav a {
+  margin-right: 10px;
+}
+header nav a button {
+  border: none;
+  padding: 11px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #0095f6;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+header nav a button.BtnSecond {
+  background: transparent;
+  color: #0095f6;
+}
+
+#Maincontent {
+  width: 100%;
+  height: auto;
+  transform: translateY(60px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+}
+#Maincontent .Profile {
+  width: 900px;
+  height: 200px;
+  display: flex;
+  margin-top: 38px;
+}
+#Maincontent .Profile .divimg {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#Maincontent .Profile .divimg .ProfileImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#Maincontent .Profile .divimg .ProfileImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+#Maincontent .Profile .ProfileDesc {
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+#Maincontent .Profile .ProfileDesc .Username {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#Maincontent .Profile .ProfileDesc .Username p {
+  font-size: 22px;
+  margin-right: 20px;
+}
+#Maincontent .Profile .ProfileDesc .Username a button {
+  border: none;
+  padding: 11px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #0095f6;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+#Maincontent .Profile .ProfileDesc .Numbers {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 22px;
+  justify-content: space-evenly;
+}
+#Maincontent .Profile .ProfileDesc .Desc {
+  width: 70%;
+  padding-left: 33px;
+  margin-top: 25px;
+}
+#Maincontent .Sections {
+  margin-top: 50px;
+  border-top: 1px solid #bbb;
+  width: 900px;
+  height: 52px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+#Maincontent .Sections .Post {
+  min-width: 12px;
+  width: auto;
+  height: 52px;
+  border-top: 1px solid #222;
+}
+#Maincontent .Sections .Post .PostTag {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #555;
+  text-decoration: none;
+}
+#Maincontent .Sections .Post .PostTag h3 {
+  margin-left: 5px;
+}
+#Maincontent .Sections .Post .PostTag .Off {
+  color: #8e8e8e;
+}
+#Maincontent .Sections .Post2 {
+  margin-left: 60px;
+  border: none;
+}
+#Maincontent #PostGallery {
+  margin-top: 10px;
+  min-width: 919px;
+  max-width: 919px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+#Maincontent #PostGallery .Card {
+  position: relative;
+  width: 293px;
+  height: 293px;
+  background: #333;
+}
+#Maincontent #PostGallery .Card:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  background: #222;
+  transition: all 300ms;
+}
+#Maincontent #PostGallery .Card:hover:before {
+  opacity: 0.5;
+}
+#Maincontent #PostGallery .Card div .PostImg {
+  overflow: hidden;
+}
+#Maincontent #PostGallery .Card div .PostImg img {
+  width: 100%;
+  height: 293px;
+  max-height: 293px;
+  object-fit: cover;
+}
+#Maincontent #PostGallery .Card .Icon1 {
+  position: absolute;
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 1;
+}
+#Maincontent #PostGallery .Card .Icon1 svg {
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,316 @@
+*{
+	
+	margin:0px;
+	padding:0px;
+}
+
+$Bg-Main: #fff;
+$Bg-Second: #bbb;
+$Bg-Desc: #fafafa;
+$Button-Color1:#0095f6;
+
+body{
+
+	background: $Bg-Desc;
+	font-family: sans-serif;
+	color:#555;
+}
+
+header{
+
+	position:fixed;
+	width: 100%;
+	height: 60px;
+	background-color: $Bg-Main;
+	border-bottom: 1px solid $Bg-Second;
+
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	z-index:100;
+
+
+	img{
+
+		width:103px;
+		height: 29px;
+		transform: translateX(72px) translateY(5px);
+	}
+
+	#Search{
+	
+	background: #efefef;
+    padding: 6px;
+    border-radius: 6px;
+    padding-left: 18px;
+    padding-right: 20px;
+    transform: translateX(45px);
+
+		input{
+			background:transparent;
+			border: none;
+			outline: none;
+			color:#999;
+			height:24px;
+			margin-left: 5px;
+			font-size: 16px;
+		}
+
+		input::placeholder{
+
+			font-size:14px;
+			color: #c3b8b8;
+		}
+
+		i{
+			background: transparent;
+			color: #c3b8b8;
+		}
+	}
+
+
+	nav{
+
+		transform: translateX(-52px);
+
+		a{
+
+			margin-right:10px;
+
+			button{
+
+				border:none;
+				padding:11px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				background: $Button-Color1;
+				color:#fff;
+				border-radius:3px;
+				cursor:pointer;
+				font-weight: bolder;
+			}
+
+			button.BtnSecond{
+
+				background: transparent;
+				color: $Button-Color1;
+			}
+
+		}
+	}
+}
+
+
+#Maincontent{
+
+	width: 100%;
+    height: auto;
+    transform: translateY(60px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+
+		.Profile{
+
+			width:900px;
+			height:200px;
+			display:flex;
+			margin-top: 38px;
+
+
+			.divimg{
+				
+				width:30%;
+				display:flex;
+				justify-content:center;
+				align-items: flex-start;
+
+
+				.ProfileImg{
+
+						width:150px;
+						height:150px;
+						border-radius:50%;
+						overflow:hidden;
+
+					img{
+						width:100%;
+						height:100%;
+						object-fit:cover;
+						object-position:top;
+					}
+				}
+			}
+
+
+			.ProfileDesc{
+
+				width:70%;
+				display:flex;
+				flex-flow: column nowrap;
+				align-content:flex-start;
+				justify-content:flex-start;
+
+				.Username{
+
+					width:60%;
+					display:flex;
+					align-items: center;
+					justify-content:space-around;
+
+					p{
+						font-size:22px;
+						margin-right:20px;
+					}
+
+					a{
+
+						button{
+							border: none;
+						    padding: 11px;
+						    padding-top: 8px;
+						    padding-bottom: 8px;
+						    background: $Button-Color1;
+						    color: #fff;
+						    border-radius: 3px;
+						    cursor: pointer;
+						    font-weight: bolder;
+					    }
+					}
+
+				}
+
+
+				.Numbers{
+					width:70%;
+					display:flex;
+					flex-flow: row wrap;
+					margin-top: 22px;
+					justify-content:space-evenly;
+				}
+
+
+				.Desc{
+					width:70%;
+					padding-left:33px;
+					margin-top: 25px;
+				}
+			}
+		}
+
+
+
+
+		.Sections{
+			margin-top: 50px;
+			border-top: 1px solid #bbb;
+			width:900px;
+			height:52px;
+			display:flex;
+			flex-flow: row wrap;
+			align-items:center;
+			justify-content:center;
+
+			.Post{
+				min-width: 12px;
+				width:auto;
+				height:52px;    
+				border-top: 1px solid #222;
+
+				.PostTag{
+					display:flex;
+					font-size:14px;
+					align-items:center;
+					justify-content:center;
+					height:100%;
+					color: #555;
+					text-decoration:none;
+
+					h3{
+						margin-left:5px;
+					}
+
+					.Off{
+
+						color: #8e8e8e;
+					}
+				}
+			}
+
+
+			.Post2{
+				margin-left:60px;
+				border:none;
+			}
+		}
+
+
+		#PostGallery{
+
+			margin-top: 10px;
+			min-width: 919px;
+			max-width: 919px;
+			height:auto;
+			display:flex;
+			justify-content:flex-start;
+			flex-flow: row wrap;
+			gap: 20px;
+
+			.Card{
+				position:relative;
+				width: 293px;
+				height:293px;
+				background: #333;
+
+			&:before{
+
+				content: "";
+				position:absolute;
+				width:100%;
+				height:100%;
+				opacity: 0;
+				cursor:pointer;
+				background: #222;
+				transition: all 300ms;
+			}
+
+			&:hover:before{
+
+				opacity:.5;
+			}
+				div{
+
+					.PostImg{
+
+						overflow:hidden;
+
+						img{
+							width:100%;
+							height: 293px;
+							max-height: 293px;
+							object-fit:cover;
+						}
+					}
+				}
+
+				.Icon1{
+					position:absolute;
+					display:flex;
+					top:0;
+					width:100%;
+					justify-content:flex-end;
+					z-index:1;
+
+					svg{
+						margin-top:8px;
+						margin-right: 8px;
+					}
+				}
+			}
+
+		}
+}

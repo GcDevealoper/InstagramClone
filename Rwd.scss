@@ -1,0 +1,65 @@
+@media (max-width: 943px){
+
+	header{
+
+		#Search{
+
+			display:none;
+		}
+	}
+
+	#Maincontent{
+
+		#PostGallery{
+			min-width: 615px;
+			max-width: 615px;
+			margin: 0 auto;
+
+		}
+
+		.Profile{
+			width:100%;
+		}
+	}
+
+	.Sections{
+
+		width:100%;
+		margin-bottom: 10px;
+	}
+
+}
+
+@media (max-width:682px){
+
+	#Maincontent{
+
+
+		.MProfile{
+			display:flex;
+		}
+
+		.Profile{
+
+			display:none;
+		}
+	}
+}
+
+@media (max-width:606px){
+
+
+	#Maincontent{
+
+		.MProfile{
+
+			.MpHead{
+				
+				img{
+					width:110px;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
