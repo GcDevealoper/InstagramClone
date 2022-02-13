@@ -83,6 +83,7 @@ header nav a button.BtnSecond {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 #Maincontent .Profile {
   width: 900px;

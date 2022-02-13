@@ -25,10 +25,47 @@
     display: none;
   }
 }
+@media (max-width: 634px) {
+  header {
+    justify-content: space-between;
+  }
+
+  #Maincontent #PostGallery {
+    min-width: 296px;
+    max-width: 296px;
+  }
+}
 @media (max-width: 606px) {
   #Maincontent .MProfile .MpHead img {
     width: 110px;
     margin-right: 20px;
+  }
+}
+@media (max-width: 528px) {
+  #Maincontent .MProfile .MpHead {
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  #Maincontent .MProfile .MpHead .MNumbers {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 468px) {
+  header a img {
+    transform: translateX(13px) translateY(5px);
+  }
+  header nav {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 384px) {
+  #Maincontent .MProfile .MpHead {
+    height: auto;
+  }
+  #Maincontent .MProfile .MpHead .MNumbers {
+    gap: 16px;
   }
 }
 
