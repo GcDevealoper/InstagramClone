@@ -314,4 +314,32 @@ header{
 			}
 
 		}
+
+		footer{
+			width: 90%;
+		    display: flex;
+		    flex-direction: column;
+		    flex-wrap: nowrap;
+		    align-items: center;
+		    justify-content: center;
+		    align-content: center;
+		    margin-top: 30px;
+		    font-size: 12px;
+
+		    nav{
+		    	display:flex;
+		    	gap: 10px;
+		    	margin-bottom: 20px;
+
+		    	a{
+		    		text-decoration:none;
+		    		color:#777;
+		    	}
+		    }
+
+		    span{
+
+		    	color:#777;
+		    }
+		}
 }

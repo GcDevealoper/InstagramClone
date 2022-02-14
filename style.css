@@ -234,5 +234,28 @@ header nav a button.BtnSecond {
   margin-top: 8px;
   margin-right: 8px;
 }
+#Maincontent footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+#Maincontent footer nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#Maincontent footer nav a {
+  text-decoration: none;
+  color: #777;
+}
+#Maincontent footer span {
+  color: #777;
+}
 
 /*# sourceMappingURL=style.css.map */

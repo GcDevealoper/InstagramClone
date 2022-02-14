@@ -12,9 +12,34 @@
     width: 100%;
   }
 
-  .Sections {
+  #Maincontent .Sections {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bbb;
+  }
+  #Maincontent .Sections .Post {
+    width: 130px;
+  }
+  #Maincontent .Sections .Post .PostTag svg {
+    transform: scale(2.5);
+  }
+  #Maincontent .Sections .Post .PostTag h3 {
+    display: none;
+  }
+  #Maincontent .Sections .Post2 {
+    width: 130px;
+  }
+  #Maincontent .Sections .Post2 .PostTag svg {
+    transform: scale(2.5);
+  }
+  #Maincontent .Sections .Post2 .PostTag h3 {
+    display: none;
+  }
+}
+@media (max-width: 825px) {
+  #Maincontent footer nav {
+    display: none;
   }
 }
 @media (max-width: 682px) {
@@ -66,6 +91,11 @@
   }
   #Maincontent .MProfile .MpHead .MNumbers {
     gap: 16px;
+  }
+}
+@media (max-width: 375px) {
+  #Maincontent {
+    font-size: 13px;
   }
 }
 
