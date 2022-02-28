@@ -256,9 +256,8 @@ header{
 			min-width: 919px;
 			max-width: 919px;
 			height:auto;
-			display:flex;
-			justify-content:flex-start;
-			flex-flow: row wrap;
+			display:grid;
+			grid-template-columns: auto auto auto;
 			gap: 20px;
 
 			.Card{

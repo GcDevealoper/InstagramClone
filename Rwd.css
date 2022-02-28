@@ -3,11 +3,6 @@
     display: none;
   }
 
-  #Maincontent #PostGallery {
-    min-width: 615px;
-    max-width: 615px;
-    margin: 0 auto;
-  }
   #Maincontent .Profile {
     width: 100%;
   }
@@ -37,9 +32,32 @@
     display: none;
   }
 }
+@media (max-width: 932px) {
+  #Maincontent #PostGallery {
+    justify-content: center;
+    gap: 11px;
+  }
+  #Maincontent #PostGallery .Card {
+    width: 250px;
+    height: 250px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    height: 250px;
+    max-height: 250px;
+  }
+}
 @media (max-width: 825px) {
   #Maincontent footer nav {
     display: none;
+  }
+}
+@media (max-width: 790px) {
+  #Maincontent #PostGallery .Card {
+    width: 200px;
+    height: 200px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 200px;
   }
 }
 @media (max-width: 682px) {
@@ -50,14 +68,24 @@
     display: none;
   }
 }
+@media (max-width: 636px) {
+  #Maincontent .Sections {
+    margin-bottom: 0px;
+  }
+  #Maincontent #PostGallery {
+    gap: 1px;
+  }
+  #Maincontent #PostGallery .Card {
+    width: 180px;
+    height: 180px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 180px;
+  }
+}
 @media (max-width: 634px) {
   header {
     justify-content: space-between;
-  }
-
-  #Maincontent #PostGallery {
-    min-width: 296px;
-    max-width: 296px;
   }
 }
 @media (max-width: 606px) {
@@ -77,12 +105,39 @@
     justify-content: center;
   }
 }
+@media (max-width: 548px) {
+  #Maincontent #PostGallery .Card {
+    width: 150px;
+    height: 150px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 150px;
+  }
+}
 @media (max-width: 468px) {
   header a img {
     transform: translateX(13px) translateY(5px);
   }
   header nav {
     transform: translateX(0px);
+  }
+}
+@media (max-width: 464px) {
+  #Maincontent #PostGallery .Card {
+    width: 130px;
+    height: 130px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 130px;
+  }
+}
+@media (max-width: 402px) {
+  #Maincontent #PostGallery .Card {
+    width: 120px;
+    height: 120px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 120px;
   }
 }
 @media (max-width: 384px) {
@@ -96,6 +151,15 @@
 @media (max-width: 375px) {
   #Maincontent {
     font-size: 13px;
+  }
+}
+@media (max-width: 370px) {
+  #Maincontent #PostGallery .Card {
+    width: 105px;
+    height: 105px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 105px;
   }
 }
 
