@@ -1,80 +1,166 @@
+@media (max-width: 943px) {
+  header #Search {
+    display: none;
+  }
 
-@media (max-width: 932px){
+  #Maincontent .Profile {
+    width: 100%;
+  }
 
-	#DescAndSkills{
-		flex-flow: column wrap;
-		gap: 33px;
-	}
-
-	#DescAndSkills .Desc{
-		width: 70%;
-
-	}
-
-	.Projects .card{
-		width: 308px;
-
-	}
-
+  #Maincontent .Sections {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bbb;
+  }
+  #Maincontent .Sections .Post {
+    width: 130px;
+  }
+  #Maincontent .Sections .Post .PostTag svg {
+    transform: scale(2.5);
+  }
+  #Maincontent .Sections .Post .PostTag h3 {
+    display: none;
+  }
+  #Maincontent .Sections .Post2 {
+    width: 130px;
+  }
+  #Maincontent .Sections .Post2 .PostTag svg {
+    transform: scale(2.5);
+  }
+  #Maincontent .Sections .Post2 .PostTag h3 {
+    display: none;
+  }
+}
+@media (max-width: 932px) {
+  #Maincontent #PostGallery {
+    justify-content: center;
+    gap: 11px;
+  }
+  #Maincontent #PostGallery .Card {
+    width: 250px;
+    height: 250px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    height: 250px;
+    max-height: 250px;
+  }
+}
+@media (max-width: 825px) {
+  #Maincontent footer nav {
+    display: none;
+  }
+}
+@media (max-width: 790px) {
+  #Maincontent #PostGallery .Card {
+    width: 200px;
+    height: 200px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 200px;
+  }
+}
+@media (max-width: 682px) {
+  #Maincontent .MProfile {
+    display: flex;
+  }
+  #Maincontent .Profile {
+    display: none;
+  }
+}
+@media (max-width: 636px) {
+  #Maincontent .Sections {
+    margin-bottom: 0px;
+  }
+  #Maincontent #PostGallery {
+    gap: 1px;
+  }
+  #Maincontent #PostGallery .Card {
+    width: 180px;
+    height: 180px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 180px;
+  }
+}
+@media (max-width: 634px) {
+  header {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 606px) {
+  #Maincontent .MProfile .MpHead img {
+    width: 110px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 528px) {
+  #Maincontent .MProfile .MpHead {
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  #Maincontent .MProfile .MpHead .MNumbers {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 548px) {
+  #Maincontent #PostGallery .Card {
+    width: 150px;
+    height: 150px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 150px;
+  }
+}
+@media (max-width: 468px) {
+  header a img {
+    transform: translateX(13px) translateY(5px);
+  }
+  header nav {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 464px) {
+  #Maincontent #PostGallery .Card {
+    width: 130px;
+    height: 130px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 130px;
+  }
+}
+@media (max-width: 402px) {
+  #Maincontent #PostGallery .Card {
+    width: 120px;
+    height: 120px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 120px;
+  }
+}
+@media (max-width: 384px) {
+  #Maincontent .MProfile .MpHead {
+    height: auto;
+  }
+  #Maincontent .MProfile .MpHead .MNumbers {
+    gap: 16px;
+  }
+}
+@media (max-width: 375px) {
+  #Maincontent {
+    font-size: 13px;
+  }
+}
+@media (max-width: 370px) {
+  #Maincontent #PostGallery .Card {
+    width: 105px;
+    height: 105px;
+  }
+  #Maincontent #PostGallery .Card div .PostImg img {
+    max-height: 105px;
+  }
 }
 
-
-@media (max-width:768px ){
-
-
-#SocialLinks{
-
-	width: 86px;
-	border-radius: 0px;
-}
-
-#SocialLinks i{
-
-	display: none;
-}
-
-#SocialLinks .Links{
-
-	display: inline-block;
-	opacity: 1;
-}
-
-
-#SocialLinks:hover{
-
-	width: 86px;
-    border-radius: 0px;
-}
-
-#SocialLinks:hover .Links{
-
-	animation: none;
-
-}
-
-
-}
-
-@media (max-width: 693px){
-
-	#DescAndSkills{
-		width: 100%;
-
-	}
-
-	#DescAndSkills .Desc{
-
-		width: 90%;
-
-	}
-
-	.Desc h2{
-
-		font-size: 21px;
-	}
-
-	.Skllset{
-
-		width: 90%;
-	}
-}
+/*# sourceMappingURL=Rwd.css.map */
